@@ -8,13 +8,13 @@ var discountSenior = basePrice * 0.6;
 
 // Conditional statements
 if (age >= 65) {
-  document.getElementById('discount').innerHTML = 'Prezzo scontato per over 65: <br>' + discountSenior + ' €';
+  document.getElementById('discount').innerHTML = 'Prezzo scontato per over 65: <br>' + discountSenior.toFixed(2) + ' €';
 }
 else if (age < 18) {
-  document.getElementById('discount').innerHTML = 'Prezzo scontato per under 18: <br>' + discountYoung + ' €';
+  document.getElementById('discount').innerHTML = 'Prezzo scontato per under 18: <br>' + discountYoung.toFixed(2) + ' €';
 }
 else {
-  document.getElementById('no-discount').innerHTML = 'Prezzo del biglietto: <br>' + basePrice + ' €';
+  document.getElementById('no-discount').innerHTML = 'Prezzo del biglietto: <br>' + basePrice.toFixed(2) + ' €';
 }
 
 // HTML inclusions 
